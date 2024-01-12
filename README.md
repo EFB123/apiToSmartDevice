@@ -10,8 +10,10 @@ In EPtP110, the code reads electrical price for the day.
 This is used together with a limit value to decide when the device should be turned on/off.
 A problem with this program is that the updated firmware of the smart-device might hinder functionality off the PyP100 package used for connection over wifi to the device. This means that turning off automatic updating for this device before using it in a setup like this is smart.
 ### Specific initial setup
- Replace this in the code with device-ip and tp-link credentials: PyP110.P110= PyP110.P110("192.168.x.xxx","user@email.com","password123"). 
- Replace this in the code with actual working api for your region: s = 'https://www.example/get.electric_price/certain_region/date.today'
+Replace this in the code with device-ip and tp-link credentials: 
+> PyP110.P110= PyP110.P110("192.168.x.xxx","user@email.com","password123"). 
+Replace this in the code with actual working api for your region:
+>  s =  "someWebbsiteWithElectricalPrices/api/somethingWithDateAndRegion"
 
 ## General initial setup
 Initialize the smart device on your network before using the program. This can be done f.e. in the tapo phone application. PyP100 library is not capable of initial setup of the smart device.
