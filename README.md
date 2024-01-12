@@ -16,5 +16,5 @@ Initialize the smart device on your network before using the program. This can b
 ## Packages used:
 time, schedule, requests, keyboard, https://github.com/almottier/TapoP100/blob/main/PyP100/PyP100.py.
 All of these can be installed with pip(package installer for python)
-Note that the PyP100 is not the official one, but a later build, this can be used in pip:
+Note that the PyP100 is not the official one, but a later build from another author, this can be used in pip for installation:
 > pip install git+https://github.com/almottier/TapoP100.git@main
