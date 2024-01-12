@@ -12,6 +12,7 @@ A problem with this program is that the updated firmware of the smart-device mig
 ### Specific initial setup
 Replace this in the code with device-ip and tp-link credentials: 
 > PyP110.P110= PyP110.P110("192.168.x.xxx","user@email.com","password123"). 
+
 Replace this in the code with actual working api for your region:
 >  s =  "someWebbsiteWithElectricalPrices/api/somethingWithDateAndRegion"
 
