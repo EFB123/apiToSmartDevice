@@ -3,7 +3,7 @@
 This project uses information from a webb api to control a smart device on a daily schedule.
 This project is currently aimed at only one model of smartplug(tapo p110) from TP-link and is only tested with firmware 1.3.0
 The code can be altered to function with a broader group of smart devices and from different api sources for different functionality.
-For now it is focused on saving money by turning off devices when cost is to high.
+For now it is focused on saving money by turning off devices when electricity cost is to high.
 
 ## Electricity Price to P110(tapo smartplug) (EPtP110)
 In EPtP110, the code reads electrical price for the day. 
