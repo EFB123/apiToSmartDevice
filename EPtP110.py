@@ -6,7 +6,7 @@ class Controller:
     def __init__(self,down_time,cost_limit) -> None:
         self.down_time : [int] = down_time
         self.cost_limit : float = cost_limit
-        self.smart_plug : PyP110.P110= PyP110.P110("192.168.1.147","elias.barck@gmail.com","password123")
+        self.smart_plug : PyP110.P110= PyP110.P110("192.168.x.xxx","user@email.com","password123") #device ip(can be found in the tapo phone app),tp-link user-mail and password
         self.response = {}
         self.update_response()
         
