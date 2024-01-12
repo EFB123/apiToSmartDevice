@@ -78,7 +78,7 @@ def main():
             c.update_cost_limit_with_prompt()
             c.update_down_time()#no api request needed => less risk of fault
             controlP110(c)
-        while getattr(c,"response")=="no response":
+        while getattr(c,"response")=="no response": #not tested, but should go in loop if api connection fails until it works (or just indefinetly if not)
             time.sleep(60)
             c.update_response()
         #print(c)#DEBUG
