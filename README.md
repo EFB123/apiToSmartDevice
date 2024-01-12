@@ -9,8 +9,10 @@ For now it is focused on saving money by turning off devices when electricity co
 In EPtP110, the code reads electrical price for the day. 
 This is used together with a limit value to decide when the device should be turned on/off.
 A problem with this program is that the updated firmware of the smart-device might hinder functionality off the PyP100 package used for connection over wifi to the device. This means that turning off automatic updating for this device before using it in a setup like this is smart.
+### Specific initial setup
+ Replace this in the code with device-ip and tp-link credentials: PyP110.P110= PyP110.P110("192.168.x.xxx","user@email.com","password123"). 
 
-## Initial setup
+## General initial setup
 Initialize the smart device on your network before using the program. This can be done f.e. in the tapo phone application. PyP100 library is not capable of initial setup of the smart device.
 
 ## Packages used:
