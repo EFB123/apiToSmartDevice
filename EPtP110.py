@@ -34,7 +34,11 @@ class Controller:
         print(f"down time updated:{self.down_time}")#debug
     def update_response(self):
         d=time.localtime()
-        s = 'https://www.elprisetjustnu.se/api/v1/prices/20{}/{}-{}_{}.json'.format(time.strftime("%y",d),time.strftime("%m",d),time.strftime("%d",d),'SE3')
+        s =  "someWebbsiteWithElectricalPrices/api/somethingWithDateAndRegion" #replace this with appropriate api for your region, below is api example
+        """
+        example of swedish api
+        'https://www.elprisetjustnu.se/api/v1/prices/20{}/{}-{}_{}.json'.format(time.strftime("%y",d),time.strftime("%m",d),time.strftime("%d",d),'SE3')
+        """
         try:
             r = requests.get(s)
         except ConnectionError as e:
